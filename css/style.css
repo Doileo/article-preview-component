@@ -1,0 +1,143 @@
+/*-------------------*/
+/* Custom properties */
+/*-------------------*/
+
+:root {
+    /* colors */
+    --clr-dark-grayish-blue: 217 19% 25%;
+    --clr-desaturated-dark-blue: 214 17% 51%;
+    --clr-grayish-blue: 212 23% 69%;
+    --clr-light-grayish-blue: 210 46% 95%;
+}
+
+/*-------------------*/
+/* Reset             */
+/*------------------ */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+p {
+    margin: 0;
+}
+
+h1,
+p {
+    font-weight: 300;
+}
+
+/* set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh; /* it prevents short pages */
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    background-color: #ECF2F8;
+    position: relative;
+    overflow: hidden;
+}
+
+/* make images easier to work with*/
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off*/
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+
+/*------------------*/
+/* Utility classes  */
+/*------------------*/
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+/* colors */
+.text-dark { color: hsl( var(--clr-dark-grayish-blue) ); }
+.text-desaturated { color: hsl( var(--clr-desaturated-dark-blue) ); }
+.text-grayish-blue { color: hsl( var(--clr-grayish-blue) ); }
+
+/* Component styles */
+.component-wrapper {
+    width: 327px;
+    margin: 5rem auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.component-wrapper:hover {
+    box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
+}
+
+.component {
+    width: 327px;
+    height: 512px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.component-image {
+    position: relative;
+    width: 327px;
+}
+  
+.component-main-image {
+    display: block;
+    max-width: 100%;
+    width: 327px;
+    height: 200px;
+}
+
+.component-content {
+    padding: 10px 32px;
+    transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+
+.component-title {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.23rem;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    padding: 12px 0;
+}
+
+.component-excerpt {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+}
+
