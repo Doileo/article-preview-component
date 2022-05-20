@@ -91,18 +91,13 @@ select {
 .component-wrapper {
     width: 327px;
     margin: 5rem auto;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-}
-
-.component-wrapper:hover {
-    box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
 }
 
 .component {
     width: 327px;
     height: 512px;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 5%;
 }
 
 .component-image {
@@ -115,11 +110,16 @@ select {
     max-width: 100%;
     width: 327px;
     height: 200px;
+    border-radius: 5% 5% 0 0;
 }
 
 .component-content {
     padding: 10px 32px;
     transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+
+.component-info {
+    margin-bottom: 7rem;
 }
 
 .component-title {
@@ -140,4 +140,54 @@ select {
     line-height: 20px;
     letter-spacing: 0.12px;
 }
+
+.component-profile {
+    padding-top: 0.5rem;
+}
+
+.profile-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-image-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-details {
+    padding: 5px 25px 0 1px;
+}
+
+.name,
+.date {
+    font-size: 1rem;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.date {
+    font-weight: 500;
+}
+
+.component-share-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 60%;
+    background-color: hsl( var(--clr-light-grayish-blue) );
+    cursor: pointer;
+}
+
+
 
