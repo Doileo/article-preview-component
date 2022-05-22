@@ -4,7 +4,7 @@
 
 :root {
     /* colors */
-    --clr-dark-grayish-blue: 217 19% 25%;
+    --clr-dark-grayish-blue: 217 19% 35%;
     --clr-desaturated-dark-blue: 214 17% 51%;
     --clr-grayish-blue: 212 23% 69%;
     --clr-light-grayish-blue: 210 46% 95%;
@@ -86,6 +86,7 @@ select {
 .text-dark { color: hsl( var(--clr-dark-grayish-blue) ); }
 .text-desaturated { color: hsl( var(--clr-desaturated-dark-blue) ); }
 .text-grayish-blue { color: hsl( var(--clr-grayish-blue) ); }
+.text-light-blue { color: hsl( var(--clr-light-grayish-blue) ); }
 
 /* Component styles */
 .component-wrapper {
@@ -177,6 +178,37 @@ select {
     font-weight: 500;
 }
 
+.component-social-platforms {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    left: -33px;
+    bottom: 47px;
+    border-radius: 0 0 10px 10px;
+    background-color: hsl( var(--clr-dark-grayish-blue));
+    height: 64px;
+    width: 328px;
+}
+
+.share-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 0 10px 0 32px
+}
+
+.social-platform {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    padding: 1px 10px;
+}
+
 .component-share-icon {
     width: 32px;
     height: 32px;
@@ -187,6 +219,30 @@ select {
     border-radius: 60%;
     background-color: hsl( var(--clr-light-grayish-blue) );
     cursor: pointer;
+}
+
+.component-share-icon-active {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    border: none;
+    border-radius: 60%;
+    background-color: hsl( var(--clr-grayish-blue));
+    position: relative;
+    right: -32px;
+}
+
+.share-icon-2 {
+    position: relative;
+    left: -7px;
+    height: 13px;
+    color:hsl( var(--clr-light-grayish-blue) );
+}
+
+#active {
+    display: none;
 }
 
 
