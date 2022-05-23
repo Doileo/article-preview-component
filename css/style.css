@@ -245,5 +245,116 @@ select {
     display: none;
 }
 
+/* atribution class */
+.attribution {
+    margin: 5px;
+    padding: 30px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/*Desktop styles*/
+@media (min-width: 1440px) {
+
+    .component-wrapper {
+        position: relative;
+        top: 150px;
+        left: 400px;
+        margin: 0;
+    }
+
+    .component {
+        width: 730px;
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 30px 2px var(--clr-grayish-blue-shadow);
+    }
+
+    .component-image {
+        width: 100%;
+    }
+
+    .component-main-image {
+        width: 285px;
+        height: 280px;
+        display: flex;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .component-content {
+        height: 280px;
+        padding: 15px 40px 15px 40px;
+    }
+
+    .component-info {
+        width: 365px;
+        margin-bottom: 5.5rem;
+    }
+
+    .profile-details {
+        padding: 5px 120px 0 1px;
+    }
+
+    #active {
+        border-radius: 1rem;
+        max-width: 18rem;
+        height: 4rem;
+        position: relative;
+        bottom: 115%;
+        left: 55%
+    }
+    
+    #active:after, .active:before {
+        top: 90%;
+        left: 50%;
+        border: solid;
+        content: "";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    #active:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-top-color: hsl(217, 19%, 35%);
+        border-width: 30px;
+        margin-left: -30px;
+    }
+    #active:before {
+        border-color: rgba(194, 225, 245, 0);
+        border-top-color: hsl(217, 19%, 35%);
+        border-width: 2rem;
+        margin-left: -36px;
+    }
+    
+    #active .share-text {
+        font-size: 1.5em;
+    }
+    
+    #active .social-platform  {
+        max-width: 40%;
+        height: 30%;
+    }
+    
+    .share-icon-2 {
+       align-items: center;
+       height: 1.5rem;
+    }
+
+    .attribution {
+        position: absolute;
+        right: -175px;
+        bottom: -150px;
+    }
+
+
+
+
+}
 
 
