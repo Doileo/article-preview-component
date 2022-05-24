@@ -234,14 +234,14 @@ select {
     right: -32px;
 }
 
-.share-icon-2 {
+#share-icon-2 {
     position: relative;
     left: -7px;
     height: 13px;
     color:hsl( var(--clr-light-grayish-blue) );
 }
 
-#active {
+.active-state {
     display: none;
 }
 
@@ -345,7 +345,7 @@ select {
         display: none;
     }
     
-    .share-icon-2 {
+    #share-icon-2 {
        align-items: center;
        height: 1.5rem;
     }
@@ -355,10 +355,6 @@ select {
         right: -175px;
         bottom: -150px;
     }
-
-
-
-
 }
 
 
