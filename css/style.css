@@ -304,8 +304,8 @@ select {
         max-width: 18rem;
         height: 4rem;
         position: relative;
-        bottom: 115%;
-        left: 55%
+        bottom: 125px;
+        left: 205px;
     }
     
     #active:after, .active:before {
@@ -333,12 +333,16 @@ select {
     }
     
     #active .share-text {
-        font-size: 1.5em;
+        font-size: 1rem;
     }
     
     #active .social-platform  {
         max-width: 40%;
         height: 30%;
+    }
+
+    .component-share-icon-active {
+        display: none;
     }
     
     .share-icon-2 {
