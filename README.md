@@ -15,7 +15,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-article-preview-component-using-flexbox-utility-classes-7VYn6tZ2rT)
+- Live Site URL: [Add live site URL here](https://doileo.github.io/article-preview-component/)
 
 ## My process
 
@@ -44,47 +43,51 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Completing this project taught me how to use the share icon and display the social media icons that may be shared.
+Here are some code snippets for this challenging part of the project:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+<div id="active" class="component-social-platforms active-state">
+  <p class="share-text text-grayish-blue">Share</p>
+  <img class="social-platform" src="./images/icon-facebook.svg" alt="Facebook">
+  <img class="social-platform" src="./images/icon-twitter.svg" alt="Twitter">
+  <img class="social-platform" src="./images/icon-pinterest.svg" alt="Pinterest">
+  <div class="component-share-icon-active">
+    <img id="share-icon-2" src="./images/share-solid.svg" alt="A share-icon">
+  </div>
+</div>
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const shareIcon = document.getElementById("share-icon");
+    
+const active = document.getElementById("active");
+const shareIcon2  = document.getElementById("share-icon-2");
+
+shareIcon.addEventListener("click", () => {
+    active.classList.toggle("active-state");
+})
+
+shareIcon2.addEventListener("click", () => {
+    active.classList.toggle("active-state");
+});
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+The sharing icon for the social media icons is something I'd like to keep using depending on the projects.
+Another crucial stage, in my opinion, is the project's meticulous planning. I'll provide some resources that I found useful in the section below.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Resource 1](https://bradfrost.com/blog/post/atomic-web-design/) - This helped me for understanding how better to plan the project details. I really liked this approach and will use it going forward.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Doina](https://doileo.github.io/article-preview-component/)
+- Frontend Mentor - [@Doileo](https://www.frontendmentor.io/profile/Doileo)
+- Twitter - [@DLeovchin](https://twitter.com/DLeovchin)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I'd like to mention that I got some inspiration from Andrea's solution for the shareable feature of the project. Here's the live site (https://andrea-everett.github.io/Article-Preview/)
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
